@@ -1,0 +1,11 @@
+# requirements.txt
+pandas>=1.3.0
+transformers>=4.41.2 # Ensure compatibility with Llama 3
+torch>=2.0.0
+sentencepiece>=0.1.99 # Required by Llama tokenizers
+accelerate>=0.30.1  # For efficient model loading and inference
+bitsandbytes>=0.43.1 # For 4-bit quantization (if using, highly recommended for memory on Colab T4)
+jsonschema>=4.0.0 # To validate parsed JSON output (good practice)
+
+streamlit>=1.35.0
+gradio # Alternative UI library
